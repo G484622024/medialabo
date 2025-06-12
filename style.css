@@ -1,0 +1,19 @@
+h1 {
+    color: rgb(0, 225, 255);
+	margin: 5px;
+    background: linear-gradient(0.25turn, rgb(255, 255, 255), #afffb7);
+	font-family: cursive;
+}
+
+h2 {
+    color: green;
+    font-style: oblique;
+    border-style: dotted;
+}
+
+h3 {
+    color: #3f3faf;
+	margin: 5px;
+	background: linear-gradient(0.25turn, rgb(240, 249, 111), #ffffff);
+	font-family: cursive;
+}
