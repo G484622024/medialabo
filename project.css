@@ -1,0 +1,19 @@
+h1 {
+    color: rgb(191, 55, 233);
+	margin: 5px;
+    background: linear-gradient(0.25turn, rgb(98, 244, 72), #3afae7);
+	font-family: cursive;
+}
+
+h2 {
+    color: rgb(42, 48, 246);
+    font-style: italic;
+    border-style: dotted;
+}
+
+li {
+    
+    font-style: italic;
+    color: rgba(100, 3, 255, 0.667);
+    font-size: medium;
+}

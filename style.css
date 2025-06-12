@@ -17,3 +17,21 @@ h3 {
 	background: linear-gradient(0.25turn, rgb(240, 249, 111), #ffffff);
 	font-family: cursive;
 }
+
+p {
+    color: rgb(0, 38, 255);
+    font-style: italic;
+    font-size: medium;
+}
+
+a:link {
+  color: rgb(246, 42, 76);
+}
+
+a:visited {
+  color: rgb(53, 118, 15);
+}
+
+a:hover {
+  text-decoration: none;
+}
