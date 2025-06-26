@@ -18,14 +18,14 @@ function hantei() {
   if (kaisu>= 4 || frag===1) {
     result.textContent = '答えは ' + kotae + 'でした. すでにゲームは終わっています';
   }else if(yoso === kotae){
-    result.textContent = '正解です。おめでとう！'; 
+    result.textContent = '正解です. おめでとう！'; 
     frag = 1;
   }else if (kaisu >= 3) {
-    result.textContent = '残念、答えは ' + kotae + ' でした。ゲーム終了です。';
+    result.textContent = 'まちがい. 残念でした答えは ' + kotae + ' でした。ゲーム終了です';
   } else if (yoso < kotae) {
-    result.textContent = 'まちがい。答えはもっと大きいですよ。';
+    result.textContent = 'まちがい. 答えはもっと大きいですよ';
   } else {
-    result.textContent = 'まちがい。答えはもっと小さいですよ。';
+    result.textContent = 'まちがい. 答えはもっと小さいですよ';
  }
    // 回答回数を表示
   document.querySelector('#kaisu').textContent = kaisu;
