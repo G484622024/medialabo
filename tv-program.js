@@ -33,8 +33,23 @@ function printDom(data) {
 
 // 課題6-1 のイベントハンドラ sendRequest() の定義
 function sendRequest() {
+  let s = document.querySelector('select#a1');
+  let idx = s.selectedIndex;  // idx 番目の option が選択された
+  
+  let os = s.querySelectorAll('option.b');  // s の子要素 option をすべて検索
+  let o = os.item(idx);       // os の idx 番目の要素
 
+  let t = document.querySelector('select#a2');
+  let idy = t.selectedIndex;  // idx 番目の option が選択された
+  
+  let ot = t.querySelectorAll('option.c');  // s の子要素 option をすべて検索
+  let r = ot.item(idy);       // os の idx 番目の要素
+  console.log(o.value);
+  console.log(r.value);
 }
+let btn = document.querySelector('button#btn');
+btn.addEventListener('click', sendRequest);
+
 
 // 課題6-1: 通信が成功した時の処理は以下に記述
 function showResult(resp) {
