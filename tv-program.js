@@ -23,8 +23,59 @@ function print(data) {
 }
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
+    let count = 1;
+    let p = document.querySelector('div#result');
+    let h0 = document.createElement('h2');
+    h0.textContent = "NHKの番組表(検索結果は2件)";
+    p.insertAdjacentElement('beforeend', h0);
 
+    for (let n of data.list.g1) {
+
+        let h1 = document.createElement('h2');
+        h1.textContent = "検索結果" + count + "件目";
+        p.insertAdjacentElement('beforeend', h1);
+
+        let ul = document.createElement('ul');
+
+        let li2 = document.createElement('li');
+        li2.textContent = "開始時刻: " + n.start_time;
+        ul.insertAdjacentElement('beforeend', li2);
+
+        let li3 = document.createElement('li');
+        li3.textContent = "終了時刻: " + n.end_time;
+        ul.insertAdjacentElement('beforeend', li3);
+
+        let li4 = document.createElement('li');
+        li4.textContent = "チャンネル: " + n.service.name;
+        ul.insertAdjacentElement('beforeend', li4);
+
+        let li5 = document.createElement('li');
+        li5.textContent = "タイトル: " + n.title;
+        ul.insertAdjacentElement('beforeend', li5);
+
+        let li6 = document.createElement('li');
+        li6.textContent = "サブタイトル: " + n.subtitle;
+        ul.insertAdjacentElement('beforeend', li6);
+
+        let li7 = document.createElement('li');
+        li7.textContent = "番組説明: " + n.content;
+        ul.insertAdjacentElement('beforeend', li7);
+
+        if (n.act) {
+            let li8 = document.createElement('li');
+            li8.textContent = "出演者: " + n.act;
+            ul.insertAdjacentElement('beforeend', li8);
+        } else {
+            let li9 = document.createElement('li');
+            li9.textContent = "出演者: 記載なし";
+            ul.insertAdjacentElement('beforeend', li9);
+        }
+        p.insertAdjacentElement('beforeend', ul);
+        count++;
+    }
 }
+
+
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
 
