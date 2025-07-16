@@ -18,3 +18,11 @@ li {
     font-size: medium;
 }
 
+div.result {
+  flex: 1;
+  background-color: #e0f7ff;
+  padding: 1px 10px 10px 10px;
+  border-radius: 8px;
+  width: 1370px;
+  height: 70px;
+}

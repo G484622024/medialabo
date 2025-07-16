@@ -14,7 +14,7 @@ h2 {
 h3 {
     color: #3f3faf;
 	margin: 5px;
-	background: linear-gradient(0.25turn, rgb(240, 249, 111), #ffffff);
+	background: linear-gradient(0.25turn, rgb(163, 253, 99), #ffffff);
 	font-family: cursive;
 }
 
@@ -33,5 +33,84 @@ a:visited {
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: rgb(246, 181, 42);
+}
+
+div.zentai {
+  flex: 1;
+  background-color: #e0f7ff;
+  padding: 1px 10px 10px 10px;
+  border-radius: 8px;
+  width: 1370px;
+  height: 70px;
+}
+
+div.zentai2 {
+  flex: 1;
+  background-color: #e0f7ff;
+  padding: 1px 10px 1px 10px;
+  border-radius: 8px;
+  width: 1370px;
+}
+
+div.zentai3 {
+  flex: 1;
+  background-color: #e0f7ff;
+  padding: 1px 10px 1px 10px;
+  border-radius: 8px;
+  width: 1370px;
+}
+
+div.zentai4 {
+  flex: 1;
+  background-color: #e0f7ff;
+  padding: 0.25px 10px 5px 10px;
+  border-radius: 8px;
+  width: 1370px;
+  height: 75px;
+}
+
+div.zentai5 {
+  flex: 1;
+  background-color: #e0f7ff;
+  padding: 0.25px 10px 5px 10px;
+  border-radius: 8px;
+  width: 1370px;
+  height: 75px;
+}
+
+div.zentai6 {
+  flex: 1;
+  background-color: #e0f7ff;
+  padding: 0.25px 10px 5px 10px;
+  border-radius: 8px;
+  width: 1370px;
+  height: 75px;
+}
+
+div.zentai7 {
+  flex: 1;
+  background-color: #e0f7ff;
+  padding: 0.25px 10px 5px 10px;
+  border-radius: 8px;
+  width: 1370px;
+  height: 75px;
+}
+
+div.zentai8 {
+  flex: 1;
+  background-color: #e0f7ff;
+  padding: 0.25px 10px 5px 10px;
+  border-radius: 8px;
+  width: 1370px;
+  height: 75px;
+}
+
+div.zentai9 {
+  flex: 1;
+  background-color: #e0f7ff;
+  padding: 1px 10px 5px 10px;
+  border-radius: 8px;
+  width: 1370px;
+  height: 200px;
 }
